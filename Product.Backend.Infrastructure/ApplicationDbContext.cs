@@ -18,8 +18,7 @@ namespace Product.Backend.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ProductEntity>()
-                .HasIndex(t => new { t.Code })
-                .IsUnique(true);
+               .HasKey(p => new { p.ProductId}); ;
         }
     }
 }

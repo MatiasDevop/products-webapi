@@ -60,3 +60,5 @@ G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Product
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Product.Backend.Infrastructure.dll
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Product.Backend.Infrastructure.pdb
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Product.Backend.Domain.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Humanizer.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
