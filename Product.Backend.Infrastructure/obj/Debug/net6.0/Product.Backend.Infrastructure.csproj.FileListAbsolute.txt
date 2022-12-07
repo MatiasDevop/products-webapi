@@ -1,0 +1,12 @@
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Infrastructure.deps.json
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Infrastructure.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Infrastructure.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.csproj.AssemblyReference.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.AssemblyInfoInputs.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.AssemblyInfo.cs
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.csproj.CoreCompileInputs.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\refint\Product.Backend.Infrastructure.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\ref\Product.Backend.Infrastructure.dll

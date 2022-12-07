@@ -1,0 +1,12 @@
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Application.deps.json
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Application.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Application.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.csproj.AssemblyReference.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.AssemblyInfoInputs.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.AssemblyInfo.cs
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.csproj.CoreCompileInputs.cache
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\refint\Product.Backend.Application.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\ref\Product.Backend.Application.dll
