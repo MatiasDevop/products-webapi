@@ -10,3 +10,8 @@ G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\refint\Product.Backend.Infrastructure.dll
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.pdb
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\ref\Product.Backend.Infrastructure.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Domain.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Domain.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.csproj.CopyComplete
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\bin\Debug\net6.0\Product.Backend.Infrastructure.runtimeconfig.json
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Infrastructure\obj\Debug\net6.0\Product.Backend.Infrastructure.genruntimeconfig.cache
