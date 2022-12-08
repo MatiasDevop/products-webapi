@@ -10,3 +10,8 @@ G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\refint\Product.Backend.Application.dll
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.pdb
 G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\ref\Product.Backend.Application.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Domain.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Infrastructure.dll
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Domain.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\bin\Debug\net6.0\Product.Backend.Infrastructure.pdb
+G:\App-2022-Net\Product.Backend.Api\Product.Backend.Application\obj\Debug\net6.0\Product.Backend.Application.csproj.CopyComplete

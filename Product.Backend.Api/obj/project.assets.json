@@ -855,6 +855,20 @@
           }
         }
       },
+      "Product.Backend.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Product.Backend.Domain": "1.0.0",
+          "Product.Backend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Product.Backend.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Product.Backend.Application.dll": {}
+        }
+      },
       "Product.Backend.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2200,6 +2214,11 @@
         "version.txt"
       ]
     },
+    "Product.Backend.Application/1.0.0": {
+      "type": "project",
+      "path": "../Product.Backend.Application/Product.Backend.Application.csproj",
+      "msbuildProject": "../Product.Backend.Application/Product.Backend.Application.csproj"
+    },
     "Product.Backend.Domain/1.0.0": {
       "type": "project",
       "path": "../Product.Backend.Domain/Product.Backend.Domain.csproj",
@@ -2214,6 +2233,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
+      "Product.Backend.Application >= 1.0.0",
       "Product.Backend.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2245,6 +2265,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "G:\\App-2022-Net\\Product.Backend.Api\\Product.Backend.Application\\Product.Backend.Application.csproj": {
+              "projectPath": "G:\\App-2022-Net\\Product.Backend.Api\\Product.Backend.Application\\Product.Backend.Application.csproj"
+            },
             "G:\\App-2022-Net\\Product.Backend.Api\\Product.Backend.Infrastructure\\Product.Backend.Infrastructure.csproj": {
               "projectPath": "G:\\App-2022-Net\\Product.Backend.Api\\Product.Backend.Infrastructure\\Product.Backend.Infrastructure.csproj"
             }

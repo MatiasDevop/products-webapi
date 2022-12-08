@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Product.Backend.Application.Product;
 using Product.Backend.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
