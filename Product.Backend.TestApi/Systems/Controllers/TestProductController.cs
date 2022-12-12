@@ -42,5 +42,20 @@ namespace Product.Backend.TestApi.Systems.Controllers
             result.GetType().Should().Be(typeof(NoContentResult));
             (result as NoContentResult).StatusCode.Should().Be(204);
         }
+
+        [Fact]
+        public async Task SaveAsync_ShouldCallProductSaveAsyncOnce()
+        {
+            //Arrange
+            var proService = new Mock<IProductService>();
+            var newPro = ProductMockData.AddProduct();
+            var sut = new ProductController(proService.Object);
+
+            //Act
+            var result = await sut.SaveAsync(newPro);
+
+            //Assert
+            proService.Verify(x => x.SaveAsync(newPro), Times.Exactly(1));
+        }
     }
 }

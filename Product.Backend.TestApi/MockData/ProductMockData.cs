@@ -1,4 +1,5 @@
-﻿using Product.Backend.Domain;
+﻿using Product.Backend.Application.Product;
+using Product.Backend.Domain;
 
 namespace Product.Backend.TestApi.MockData
 {
@@ -34,6 +35,18 @@ namespace Product.Backend.TestApi.MockData
         public static List<ProductEntity> EmptyList()
         {
             return new List<ProductEntity>();
+        }
+
+        public static ProductDto AddProduct()
+        {
+            return new ProductDto
+            {
+                ProductId = new Guid("43f3444b-bcf1-47a4-9d83-38a5feb4ae9a"),
+                Name = "item67660",
+                Code = "x3x2s",
+                Description = "Electronic",
+                IsActive = true
+            };
         }
     }
 }
