@@ -2,7 +2,6 @@
 using Product.Backend.Domain;
 using Product.Backend.Infrastructure;
 
-
 namespace Product.Backend.Application.Product
 {
     public class ProductService : IProductService
@@ -17,9 +16,9 @@ namespace Product.Backend.Application.Product
             return await _context.Products.ToListAsync();
         }
 
-        public Task<ProductEntity> GetByIdAsync(int id)
+        public async Task<ProductEntity> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Products.Where(x => x.ProductId == id).FirstAsync();
         }
 
         public async Task<ProductEntity> SaveAsync(ProductDto newProduct)

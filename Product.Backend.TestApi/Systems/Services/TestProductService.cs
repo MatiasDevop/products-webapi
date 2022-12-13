@@ -3,11 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Product.Backend.Application.Product;
 using Product.Backend.Infrastructure;
 using Product.Backend.TestApi.MockData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Product.Backend.TestApi.Systems.Services
 {
@@ -59,6 +54,26 @@ namespace Product.Backend.TestApi.Systems.Services
             //Assert
             int expectedRecordCount = ProductMockData.GetProducts().Count + 1;
             _dbContext.Products.Count().Should().Be(expectedRecordCount);
+        }
+
+        [Fact]
+        public async Task GetByIdAsync_ReturnSuccess()
+        {
+            //Arrange
+            _dbContext.Products.AddRange(ProductMockData.GetProducts());
+            _dbContext.SaveChanges();
+            var idProduct = new Guid("a63797fa-1c14-438c-8df9-7a07d83091ed");
+
+            var sut = new ProductService(_dbContext);
+
+            //Act
+            var result = await sut.GetByIdAsync(idProduct);
+
+            //Assert
+            Assert.NotNull(result);
+            Assert.Equal(ProductMockData.GetProducts()[0].ProductId, result.ProductId);
+            Assert.True(ProductMockData.GetProducts()[0].ProductId == result.ProductId);
+            
         }
         public void Dispose()
         {

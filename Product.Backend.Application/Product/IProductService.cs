@@ -10,7 +10,7 @@ namespace Product.Backend.Application.Product
     public interface IProductService
     {
         Task<List<ProductEntity>> GetAllAsync();
-        Task<ProductEntity> GetByIdAsync(int id);
+        Task<ProductEntity> GetByIdAsync(Guid id);
         Task<ProductEntity> SaveAsync(ProductDto newProduct);
     }
 }
