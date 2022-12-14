@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Product.Backend.Domain;
 using Product.Backend.Infrastructure;
 
@@ -7,9 +8,11 @@ namespace Product.Backend.Application.Product
     public class ProductService : IProductService
     {
         private readonly ApplicationDbContext _context;
-        public ProductService(ApplicationDbContext context)
+        private readonly IMapper _mapper;
+        public ProductService(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<List<ProductEntity>> GetAllAsync()
         {
@@ -23,14 +26,8 @@ namespace Product.Backend.Application.Product
 
         public async Task<ProductEntity> SaveAsync(ProductDto newProduct)
         {
-            var entity = new ProductEntity
-            {
-                ProductId = new Guid(),
-                Code = newProduct.Code,
-                Description = newProduct.Description,
-                Name = newProduct.Name,
-                IsActive = newProduct.IsActive
-            };
+            var entity = _mapper.Map<ProductEntity>(newProduct); 
+      
             _context.Products.Add(entity);
             await _context.SaveChangesAsync();
 

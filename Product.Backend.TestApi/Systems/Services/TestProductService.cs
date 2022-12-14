@@ -1,5 +1,8 @@
-﻿using FluentAssertions;
+﻿using AutoMapper;
+using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
+using Moq;
+using Product.Backend.Application.Mapper;
 using Product.Backend.Application.Product;
 using Product.Backend.Infrastructure;
 using Product.Backend.TestApi.MockData;
@@ -9,8 +12,19 @@ namespace Product.Backend.TestApi.Systems.Services
     public class TestProductService : IDisposable
     {
         private readonly ApplicationDbContext _dbContext;
+        private readonly IMapper _mapper;
         public TestProductService()
         {
+            if (_mapper == null)
+            {
+                var mappingConfig = new MapperConfiguration(mc =>
+                {
+                    mc.AddProfile(new MappingProfiles());
+                });
+                IMapper mapper = mappingConfig.CreateMapper();
+                _mapper = mapper;
+            }
+            
             // Setup Inmemory 
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
@@ -19,6 +33,7 @@ namespace Product.Backend.TestApi.Systems.Services
             _dbContext = new ApplicationDbContext(options);
 
             _dbContext.Database.EnsureCreated();
+            
         }
 
         [Fact]
@@ -28,7 +43,7 @@ namespace Product.Backend.TestApi.Systems.Services
             _dbContext.Products.AddRange(ProductMockData.GetProducts());
             _dbContext.SaveChanges();
 
-            var sut = new ProductService(_dbContext);
+            var sut = new ProductService(_dbContext, _mapper);
 
             //Act
             var result = await sut.GetAllAsync();
@@ -46,7 +61,7 @@ namespace Product.Backend.TestApi.Systems.Services
 
             var newProduct = ProductMockData.AddProduct();
 
-            var sut = new ProductService(_dbContext);
+            var sut = new ProductService(_dbContext, _mapper);
 
             //Act
             await sut.SaveAsync(newProduct);
@@ -64,7 +79,7 @@ namespace Product.Backend.TestApi.Systems.Services
             _dbContext.SaveChanges();
             var idProduct = new Guid("a63797fa-1c14-438c-8df9-7a07d83091ed");
 
-            var sut = new ProductService(_dbContext);
+            var sut = new ProductService(_dbContext, _mapper);
 
             //Act
             var result = await sut.GetByIdAsync(idProduct);
